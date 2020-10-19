@@ -95,11 +95,12 @@ class Image:
             filename = image_path.split(os.path.sep)[-1]
             image_path = os.path.abspath(os.path.sep.join([directory, filename]))
 
-        # If no image path was specified
+        # If no image exists (nothing to write to file)
         if self.get_image() is None:
             print("ERROR: No image to save to file.")
             image_path_written = False
 
+        # If no image path was specified
         elif self.image_filespec == '' or self.image_filespec is None:
             print("ERROR: No filename specified. Unable to save to file.")
             image_path_written = False
