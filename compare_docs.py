@@ -312,7 +312,8 @@ if __name__ == '__main__':
         images = [
             ('./picts/pict1.jpg', './picts/pict2.jpg'),
             ('./picts/link.jpg', './picts/link_tweaked.jpg'),
-            ('./picts/1040.jpg', './picts/1040_updated.jpg')
+            ('./picts/1040.jpg', './picts/1040_updated.jpg'),
+            ('./picts/1040_updated_1.jpg', './picts/1040_updated_2.jpg'),
         ]
 
         comps = MultiDocCompare(image_sets=images)
